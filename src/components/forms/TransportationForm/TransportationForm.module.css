@@ -1,0 +1,93 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.select {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  width: 100%;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px var(--primary-100);
+}
+
+@media (prefers-color-scheme: dark) {
+  .select:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  }
+}
+
+.resultArea {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .resultGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.resultItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background-color: var(--bg-main);
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+}
+
+.resultLabel {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.resultValue {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.assumptions {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  background-color: var(--bg-main);
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid var(--primary-500);
+}

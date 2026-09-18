@@ -1,0 +1,151 @@
+{
+  "version": "1.0",
+  "methodology_year": "2023",
+  "factors": {
+    "transport": {
+      "car_petrol": {
+        "category": "transport",
+        "activity": "driving_petrol_car",
+        "unit": "km",
+        "factor_value": 0.192,
+        "unit_co2e": "kg",
+        "source": "UK DEFRA 2023",
+        "confidence": "Medium"
+      },
+      "car_diesel": {
+        "category": "transport",
+        "activity": "driving_diesel_car",
+        "unit": "km",
+        "factor_value": 0.171,
+        "unit_co2e": "kg",
+        "source": "UK DEFRA 2023",
+        "confidence": "Medium"
+      },
+      "car_ev": {
+        "category": "transport",
+        "activity": "driving_ev_car",
+        "unit": "km",
+        "factor_value": 0.047,
+        "unit_co2e": "kg",
+        "source": "UK DEFRA 2023",
+        "confidence": "High"
+      },
+      "bus": {
+        "category": "transport",
+        "activity": "bus_travel",
+        "unit": "km",
+        "factor_value": 0.105,
+        "unit_co2e": "kg",
+        "source": "UK DEFRA 2023",
+        "confidence": "Medium"
+      },
+      "train": {
+        "category": "transport",
+        "activity": "train_travel",
+        "unit": "km",
+        "factor_value": 0.035,
+        "unit_co2e": "kg",
+        "source": "UK DEFRA 2023",
+        "confidence": "Medium"
+      }
+    },
+    "electricity": {
+      "grid_average": {
+        "category": "electricity",
+        "activity": "grid_electricity_consumption",
+        "unit": "kWh",
+        "factor_value": 0.4,
+        "unit_co2e": "kg",
+        "source": "Global Average Grid",
+        "confidence": "High"
+      },
+      "appliance_heavy": {
+        "category": "electricity",
+        "activity": "heavy_appliance_usage",
+        "unit": "hours",
+        "factor_value": 0.5,
+        "unit_co2e": "kg",
+        "source": "Estimated Power Rating (1.25kW)",
+        "confidence": "Low"
+      },
+      "appliance_light": {
+        "category": "electricity",
+        "activity": "light_appliance_usage",
+        "unit": "hours",
+        "factor_value": 0.05,
+        "unit_co2e": "kg",
+        "source": "Estimated Power Rating (0.125kW)",
+        "confidence": "Low"
+      }
+    },
+    "food": {
+      "red_meat": {
+        "category": "food",
+        "activity": "red_meat_meal",
+        "unit": "meal",
+        "factor_value": 6.5,
+        "unit_co2e": "kg",
+        "source": "Poore & Nemecek 2018",
+        "confidence": "Medium"
+      },
+      "chicken": {
+        "category": "food",
+        "activity": "chicken_meal",
+        "unit": "meal",
+        "factor_value": 1.2,
+        "unit_co2e": "kg",
+        "source": "Poore & Nemecek 2018",
+        "confidence": "Medium"
+      },
+      "plant_based": {
+        "category": "food",
+        "activity": "plant_based_meal",
+        "unit": "meal",
+        "factor_value": 0.5,
+        "unit_co2e": "kg",
+        "source": "Poore & Nemecek 2018",
+        "confidence": "Medium"
+      }
+    },
+    "shopping": {
+      "clothing": {
+        "category": "shopping",
+        "activity": "clothing_item",
+        "unit": "item",
+        "factor_value": 15.0,
+        "unit_co2e": "kg",
+        "source": "Textile Exchange 2022",
+        "confidence": "Low"
+      },
+      "electronics": {
+        "category": "shopping",
+        "activity": "electronic_item",
+        "unit": "item",
+        "factor_value": 80.0,
+        "unit_co2e": "kg",
+        "source": "Apple Product Environmental Reports",
+        "confidence": "Low"
+      }
+    },
+    "waste": {
+      "plastic": {
+        "category": "waste",
+        "activity": "plastic_waste",
+        "unit": "kg",
+        "factor_value": 3.0,
+        "unit_co2e": "kg",
+        "source": "EPA 2023",
+        "confidence": "Low"
+      },
+      "paper": {
+        "category": "waste",
+        "activity": "paper_waste",
+        "unit": "kg",
+        "factor_value": 1.5,
+        "unit_co2e": "kg",
+        "source": "EPA 2023",
+        "confidence": "Low"
+      }
+    }
+  }
+}
