@@ -8,6 +8,26 @@
   margin-bottom: 2rem;
 }
 
+.errorAlert {
+  background-color: var(--danger-50);
+  color: var(--danger-700);
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.errorAlert ul {
+  margin-left: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .errorAlert {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: var(--danger-500);
+  }
+}
+
 .formGroup {
   display: flex;
   flex-direction: column;
@@ -90,4 +110,9 @@
   padding: 1rem;
   border-radius: var(--border-radius-md);
   border-left: 4px solid var(--primary-500);
+}
+
+.assumptions ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
 }

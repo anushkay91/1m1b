@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "effectiveDate": "2023-01-01",
+  "factors": [
+    {
+      "id": "ef_trans_car_petrol",
+      "category": "transport",
+      "activity": "driving_petrol_car",
+      "factor": 0.192,
+      "unit": "kg/km",
+      "geography": "Global/UK",
+      "source": "UK DEFRA 2023",
+      "sourceUrl": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2023",
+      "methodology": "Average passenger car, unknown engine size, petrol.",
+      "version": "1.0"
+    },
+    {
+      "id": "ef_trans_car_ev",
+      "category": "transport",
+      "activity": "driving_ev_car",
+      "factor": 0.047,
+      "unit": "kg/km",
+      "geography": "Global/UK",
+      "source": "UK DEFRA 2023",
+      "methodology": "Battery electric vehicle, electricity consumption includes transmission/distribution losses.",
+      "version": "1.0"
+    },
+    {
+      "id": "ef_trans_bus",
+      "category": "transport",
+      "activity": "bus_travel",
+      "factor": 0.105,
+      "unit": "kg/km",
+      "geography": "Global/UK",
+      "source": "UK DEFRA 2023",
+      "methodology": "Average local bus passenger km.",
+      "version": "1.0"
+    },
+    {
+      "id": "ef_trans_carpool_petrol",
+      "category": "transport",
+      "activity": "carpooling_petrol_car",
+      "factor": 0.096,
+      "unit": "kg/km",
+      "geography": "Global/UK",
+      "source": "UK DEFRA 2023 (Adjusted)",
+      "methodology": "Average petrol car divided by assumed 2 passengers.",
+      "version": "1.0"
+    },
+    {
+      "id": "ef_elec_grid",
+      "category": "electricity",
+      "activity": "grid_consumption",
+      "factor": 0.400,
+      "unit": "kg/kWh",
+      "geography": "Global Average",
+      "source": "IEA 2022 Estimate",
+      "methodology": "Global average grid emission factor for generic electricity tracking.",
+      "version": "1.0"
+    },
+    {
+      "id": "ef_food_red_meat",
+      "category": "food",
+      "activity": "red_meat_meal",
+      "factor": 6.5,
+      "unit": "kg/meal",
+      "geography": "Global",
+      "source": "Poore & Nemecek (2018)",
+      "methodology": "Average footprint of beef/lamb per typical 200g serving.",
+      "version": "1.0"
+    },
+    {
+      "id": "ef_food_plant_based",
+      "category": "food",
+      "activity": "plant_based_meal",
+      "factor": 0.5,
+      "unit": "kg/meal",
+      "geography": "Global",
+      "source": "Poore & Nemecek (2018)",
+      "methodology": "Average footprint of plant-based meal.",
+      "version": "1.0"
+    }
+  ]
+}
